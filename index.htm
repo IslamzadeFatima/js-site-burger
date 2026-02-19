@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Site Burger</title>
+</head>
+<body>
+    <main>
+        <div class="flex flex-col my-10">
+            <div class="flex items-center justify-center mb-7">
+                <h2 class="font-serif text-4xl">Our Menu</h2>
+            </div>
+            <div class="flex items-center justify-center">
+                <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-7 text-xl cursor-pointer mb-5">
+                    <li class="text-white bg-black w-15 h-10 px-3 py-1 rounded-3xl text-center ">All</li>
+                    <li class="hover:text-white hover:bg-black w-20 h-10 px-3 py-1 rounded-3xl text-center ">Burger</li>
+                    <li class="hover:text-white hover:bg-black w-18 h-10 px-3 py-1 rounded-3xl text-center ">Pizza</li>
+                    <li class="hover:text-white hover:bg-black w-18 h-10 px-3 py-1 rounded-3xl text-center ">Pasta</li>
+                    <li class="hover:text-white hover:bg-black w-18 h-10 px-3 py-1 rounded-3xl text-center ">Fries</li>
+                </ul>  
+            </div>
+            <div  id="productList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 my-8 px-15"></div>
+        </div>
+       
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

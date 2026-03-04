@@ -211,9 +211,9 @@ function updateCount(index, action) {
   } else if (action === 'minus') {
     if (sebet[index].count > 1) {
       sebet[index].count -= 1
-    }
-  } else {
-    sebet.splice(item, 1)
+    }else {
+    sebet.splice(index, 1)
+  } 
   }
   showsebet()
 }
